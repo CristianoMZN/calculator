@@ -140,188 +140,185 @@ class _MyAppState extends State<MyApp> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                GestureDetector(
-                  onTap: () {
+                ElevatedButton(
+                    onPressed: (){
                     calcular("AC");
                   },
-                  child: Text("AC",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
-                ),
+                    child: Text("AC",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 35)),
+                  ),
                 Text(" "),
                 Text(" "),
-                GestureDetector(
-                  onTap: () {},
-                  child: Text("<X",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
+                ElevatedButton(
+                    onPressed: (){},
+                    child: Icon(Icons.backspace)
                 ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                GestureDetector(
-                  onTap: () {
-                    calcular("7");
-                  },
-                  child: Text("7",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
+                ElevatedButton(
+                    onPressed: (){
+                      calcular("7");
+                      }, child: Text("7",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 35)
+                )
                 ),
-                GestureDetector(
-                  onTap: () {
-                    calcular("8");
-                  },
-                  child: Text("8",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
+        ElevatedButton(
+            onPressed: (){
+              calcular("8");
+            }, child: Text("8",
+            style: TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: 35)
+        )
+        ),
+        ElevatedButton(
+            onPressed: (){
+              calcular("9");
+            }, child: Text("9",
+            style: TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: 35)
+        )
+        ),
+      ElevatedButton(
+          onPressed: (){
+            calcular("/");
+          }, child: Text("/",
+          style: TextStyle(
+              fontWeight: FontWeight.w500,
+              fontSize: 35)
+      )
+      ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedButton(
+                    onPressed: (){
+                      calcular("4");
+                    }, child: Text("4",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 35)
+                )
                 ),
-                GestureDetector(
-                  onTap: () {
-                    calcular("9");
-                  },
-                  child: Text("9",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
+                ElevatedButton(
+                    onPressed: (){
+                      calcular("5");
+                    }, child: Text("5",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 35)
+                )
                 ),
-                GestureDetector(
-                  onTap: () {
-                    calcular("/");
-                  },
-                  child: Text("/",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
+                ElevatedButton(
+                    onPressed: (){
+                      calcular("6");
+                    }, child: Text("6",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 35)
+                )
+                ),
+                ElevatedButton(
+                    onPressed: (){
+                      calcular("X");
+                    }, child: Text("X",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 35)
+                )
                 ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                GestureDetector(
-                  onTap: () {
-                    calcular("4");
-                  },
-                  child: Text("4",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
+                ElevatedButton(
+                    onPressed: (){
+                      calcular("1");
+                    }, child: Text("1",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 35)
+                )
                 ),
-                GestureDetector(
-                  onTap: () {
-                    calcular("5");
-                  },
-                  child: Text("5",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
+                ElevatedButton(
+                    onPressed: (){
+                      calcular("2");
+                    }, child: Text("2",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 35)
+                )
                 ),
-                GestureDetector(
-                  onTap: () {
-                    calcular("6");
-                  },
-                  child: Text("6",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
+                ElevatedButton(
+                    onPressed: (){
+                      calcular("3");
+                    }, child: Text("3",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 35)
+                )
                 ),
-                GestureDetector(
-                  onTap: () {
-                    calcular("X");
-                  },
-                  child: Text("X",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                GestureDetector(
-                  onTap: () {
-                    calcular("1");
-                  },
-                  child: Text("1",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    calcular("2");
-                  },
-                  child: Text("2",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    calcular("3");
-                  },
-                  child: Text("3",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    calcular("-");
-                  },
-                  child: Text("-",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
+                ElevatedButton(
+                    onPressed: (){
+                      calcular("-");
+                    }, child: Text("-",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 35)
+                )
                 ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                GestureDetector(
-                  onTap: () {
-                    calcular("0");
-                  },
-                  child: Text("0",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
+                ElevatedButton(
+                    onPressed: (){
+                      calcular("-");
+                    }, child: Text("-",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 35)
+                )
                 ),
-                GestureDetector(
-                  onTap: () {
-                    calcular(",");
-                  },
-                  child: Text(",",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
+                ElevatedButton(
+                    onPressed: (){
+                      calcular(",");
+                    }, child: Text(",",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 35)
+                )
                 ),
-                GestureDetector(
-                  onTap: () {
-                    calcular("=");
-                  },
-                  child: Text("=",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
+                ElevatedButton(
+                    onPressed: (){
+                      calcular("=");
+                    }, child: Text("=",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 35)
+                )
                 ),
-                GestureDetector(
-                  onTap: () {
-                    calcular("+");
-                  },
-                  child: Text("+",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 35)),
-                ),
+      ElevatedButton(
+          onPressed: (){
+            calcular("+");
+          }, child: Text("+",
+          style: TextStyle(
+              fontWeight: FontWeight.w500,
+              fontSize: 35)
+      )
+      ),
               ],
             ),
             Row(),
